@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  background: url(../images/background.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000049;
+}
+.container .content {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .content .card-music {
+  min-width: 120px;
+  min-height: 100px;
+  margin: 0 10px 30px;
+  border-radius: 8px;
+  border: 5px solid #000;
+  background-color: #00000068;
+  text-align: center;
+  user-select: none;
+}
+.container .content .card-music h3 {
+  font-size: 34px;
+  text-transform: uppercase;
+  margin: 14px 0 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container .content .card-music span {
+  text-transform: uppercase;
+  color: #ffc600;
+  letter-spacing: 1.3px;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
